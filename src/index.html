@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Pool</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+</head>
+<body>
+    <header class="header">
+        
+        <div class="container">
+            <div class="header__menu">
+                <ul class="header__menu-left">
+                    <li>Главная</li>
+                    <li>Товары</li> 
+                    <li>Контакты</li>
+                </ul>
+                <div class="logo">
+                    <img src="../img/logo.png" alt="logo">
+                </div>
+                <ul class="header__menu-right">
+                    <li>+7 727 368 83 56</li> 
+                    <li>+7 771 964 36 50</li> 
+                </ul>
+            </div>   
+            <div class="header__info">
+                    <h1>СТРОИТЕЛЬСТВО БАССЕЙНОВ</h1>
+                    <p> <b>Полный спектр работ:</b> от проектирования и сдачи “под ключ” до обслуживания 
+                   <br>или реконструкции вашего бассейна, а также большой выбор товаров 
+                    </p>
+                    <button class="header__info-btn"><label for="my-checkbox">Оставить заявку</label>
+                      </button>
+            </div>
+            
+        </div>
+
+      
+            <img class="header__wave" src="../img/header-wave.png" alt="Wave Image" class="header__wave">
+           
+    </header>
+    
+    <div class="projects__title">
+        <p>
+            <h2>
+                НАШИ РАБОТЫ 
+            </h2>
+        </p>
+        
+            <img class="underline" src="../img/underline.png" alt="underline">
+         <div >
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../img/1pic.png"></div>
+                  <div class="swiper-slide"><img src="../img/2pic.png"></div>
+                  <div class="swiper-slide"><img src="../img/3pic.png"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>    
+                
+            </div >
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                  spaceBetween: 30,
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  },
+                  pagination: {
+                    el: ".swiper-pagination",
+                  },
+                  mousewheel: true,
+                  keyboard: true,
+                });
+              </script>
+                    <div class="price-block">
+                       <h2>Cколько будет стоить бассейн?</h2>
+                       <img class="underline" src="../img/underline.png" alt="underline">
+                       <p>Ответьте на несколько вопросов и наши специалисты отправят вам смету 
+                       <br> в течении 1 рабочего дня</p>
+                       <div class="price-block__info">
+                        <div class="price-block__form">
+                          <div class="price-block__form-item">
+                            <span>
+                                Отделка чаши:
+                            </span>
+                            <div class="dropdown">
+                                <select>
+                                  <option value="1">Полипропилен</option>
+                                 
+                                </select>
+                                <i class="material-icons">keyboard_arrow_down</i>
+                        </div>
+                      
+
+                          </div>
+                          <div class="price-block__form-item">
+                            <span>
+                            Нагрев воды:ㅤ
+                            </span>
+                           <div class="dropdown">
+                               <select>
+                                 <option value="1">Да</option>
+                                 <option value="2">Нет</option>
+                                
+                               </select>
+                               <i class="material-icons">keyboard_arrow_down</i>
+                       </div>
+                          </div>
+                          <div class="price-block__form-item">
+                            <span>
+                                Размер бассейна
+                            </span>
+                            <div class="slidecontainer">
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                              
+                              </div>
+                              
+                          </div>
+                          <button class="price-block-btn"><label for="my-checkbox">Оставить заявку</label>
+                          </button>
+                        </div>
+                        
+                            
+                        <div class="price-block__photo"></div>
+                       </div>
+                    </div>
+              <div >
+                <p class="card__title" >
+                   <b> Товары для бассейна </b>
+                  </p>
+                  <img class="underline" src="../img/underline.png" alt="underline">
+                  <p  class="card__category">
+                    <span> Все </span>
+                    <span> Насосы </span>
+                    <span> Нагреватели </span>
+                  </p>
+              </div>
+           <div class="cards__items">
+            <div class="card">
+                <img width="231px" height="274px" src="../img/card/1.png" alt="item1">
+                <p>Фильтровальная установка Bestway</p>
+            </div>
+            <div class="card">
+                <img width="231px" height="274px" src="../img/card/2.png" alt="item2">
+                <p>Прожектор под плитку с оправой из ABS-пластика</p>
+            </div>
+            <div class="card">
+                <img width="231px" height="274px" src="../img/card/1.png" alt="item1">
+                <p>Фильтровальная установка Bestway</p>
+            </div>
+            <div class="card">
+                <img width="231px" height="274px" src="../img/card/2.png" alt="item2">
+                <p>Прожектор под плитку с оправой из ABS-пластика</p>
+            </div>
+           </div>
+           <button class="header__items-btn"><label for="my-checkbox">Cмотреть все</label>
+           </button>
+           <nav>
+            <div class="nav-container">
+                <h2>Что вы получаете?</h2>
+                
+            </div>
+            <div class="profit-title">
+                <div>
+                    <img width="120px" height="120px" src="../img/research.png" alt="research">
+                    <span>Индивидуальное
+                         предложение</span>
+                </div>
+                <div>
+                    <img width="120px" height="120px" src="../img/time-management.png" alt="time-management">
+                    <span>Комплексная
+                         поддержка</span>
+                </div>
+                <div>
+                    <img width="120px" height="120px" src="../img/hand.png" alt="hand">
+                    <span>Качественные
+                        материалы</span>
+                </div>
+               <div class="leaves">
+                <img  src="../img/leaves.png" alt="leaves">
+               </div> 
+            </div>
+        </nav>
+
+        
+        <div class="help__block">
+            <div class="help__block-container">
+                <h3>
+                    Остались вопросы?
+                </h3>
+                <img class="underline" src="../img/underline.png" alt="underline">
+                
+            </div>
+            <p>Оставьте заявку и наши специалисты  свяжутся 
+                <br>  с вами в ближайшее время</p>
+                <input placeholder="Имя" type="text">
+
+                <input placeholder="Телефон" type="tel">
+                <button class="header__info-btn"><label for="my-checkbox">Оставить заявку</label>
+                </button>
+        </div >
+
+
+      
+
+    </div>
+    </div>
+    <footer>
+        <div class="map__block">
+            <a href="https://yandex.ru/maps/162/almaty/?utm_medium=mapframe&utm_source=maps"></a>
+            <a href="https://yandex.ru/maps/162/almaty/house/Y08YfwZiSUEPQFppfX51d39nYA==/?ll=76.912048%2C43.246344&utm_medium=mapframe&utm_source=maps&z=17"></a>
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=76.912048%2C43.246344&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg2NzI5MjE5MRJL0prQsNC30LDSm9GB0YLQsNC9LCDQkNC70LzQsNGC0YssINCY0YHQsCDQkdCw0LnQt9Cw0pvQvtCyINC606nRiNC10YHRliwgMjYzIgoN-NKZQhVC_CxC&z=17" width="1517" height="500" frameborder="0" style="margin: 0; padding: 0;"></iframe>
+            <div class="map__block-form">
+                <p>Контакты</p>
+                <br><img src="../img/icon-map.png" alt="IconMap"> <span>Казахстан, Алматы, Байзакова, 263, <br> 1 этаж, 5 офис</span>
+                <br><img src="../img/icon-phone.png" alt="IconPhone"> <span>+7 727 368 83 56, +7 771 964 36 50</span>
+                <br><img src="../img/icon-email.png" alt="IconEmail"> <span>imfo@pool.kz</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
